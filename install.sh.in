@@ -1,0 +1,11 @@
+stty rows 43
+cd ~/
+mkdir bin sbin
+decode > sbin/bridge && chmod +x sbin/bridge
+export PATH=/var/root/sbin:/var/root/bin:$PATH
+for dev in `bridge`; do 
+	if [ $dev != 'bridge' ]; then
+		ln -s ../sbin/bridge bin/$dev
+	fi
+done
+exec sh

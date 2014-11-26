@@ -1,2 +1,3 @@
 #!/bin/sh
-node bootloader.js $1
+cat install.sh > clipboard
+node bootloader.js $@

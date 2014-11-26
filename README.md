@@ -4,4 +4,6 @@ Usage:
 
 ./start.sh [http://bellard.org/jslinux]
 
+install bridge
+sh /dev/clipboard
 ```
